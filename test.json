@@ -1,0 +1,32 @@
+[{
+    "basicTools": [{
+        "name": "Git",
+        "website": "http://git-scm.com/download/"
+    }, {
+        "name": "node js",
+        "website": "https://nodejs.org/en/"
+    }, {
+        "name": "EVO加速器",
+        "website": "http://www.evojsq.me/portal.php"
+    }],
+
+    "textEditors": [{
+        "name": "sublime text",
+        "website": "http://www.sublimetext.com/3"
+    }, {
+        "name": "package control",
+        "website": "https://packagecontrol.io/installation"
+    }, {
+        "name": "Atom",
+        "website": "https://atom.io/"
+    }, {
+        "name": "brackets",
+        "website": "http://brackets.io/"
+    }, {
+        "name": "visual stuidio code",
+        "website": "http://brackets.io/"
+    }, {
+        "name": "EditPlus",
+        "website": "https://www.editplus.com/"
+    }]
+}]
