@@ -1,32 +1,42 @@
 [{
     "basicTools": [{
         "name": "Git",
-        "website": "http://git-scm.com/download/"
+        "website": "http://git-scm.com/download/",
+        "description": "great tools yesh"
     }, {
         "name": "node js",
-        "website": "https://nodejs.org/en/"
+        "website": "https://nodejs.org/en/",
+        "description": "npm install -g bower gulp grunt-cli"
     }, {
         "name": "EVO加速器",
-        "website": "http://www.evojsq.me/portal.php"
+        "website": "http://www.evojsq.me/portal.php",
+        "description": "great tools yesh"
     }],
 
     "textEditors": [{
         "name": "sublime text",
-        "website": "http://www.sublimetext.com/3"
+        "website": "http://www.sublimetext.com/3",
+        "description": "great tools yesh"
     }, {
         "name": "package control",
-        "website": "https://packagecontrol.io/installation"
+        "website": "https://packagecontrol.io/installation",
+        "description": "great tools yesh"
     }, {
         "name": "Atom",
-        "website": "https://atom.io/"
+        "website": "https://atom.io/",
+        "description": "great tools yesh"
     }, {
         "name": "brackets",
-        "website": "http://brackets.io/"
+        "website": "http://brackets.io/",
+        "description": "great tools yesh"
     }, {
-        "name": "visual stuidio code",
-        "website": "http://brackets.io/"
+        "name": "visual studio code",
+        "website": "https://www.visualstudio.com/en-us/",
+        "description": "great tools yesh"
+
     }, {
         "name": "EditPlus",
-        "website": "https://www.editplus.com/"
+        "website": "https://www.editplus.com/",
+        "description": "great tools yesh"
     }]
 }]

@@ -9,37 +9,95 @@
     <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
 </head>
 
-<body>
-    <div ng-include="'template/nav.html'"></div>
+<body class="blue-grey lighten-1">
+    <!-- nav -->
+    <nav class="blue-grey">
+        <div class="nav-wrapper container" style="padding-left: 1em;">
+            <a href="#!" class="brand-logo">CC FED</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li class="active"><a href="modules/tools/tools.html">tools</a></li>
+                <li><a href="modules/css-frameworks/css-frameworks.html">css-frameworks</a></li>
+                <li><a href="modules/js-frameworks/js-frameworks.html">js-frameworks</a></li>
+                <li><a href="modules/design/design.html">design</a></li>
+                <li><a href="modules/about-me/about-me.html">about-me</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li class="active"><a href="modules/tools/tools.html">tools</a></li>
+                <li><a href="modules/css-frameworks/css-frameworks.html">css-frameworks</a></li>
+                <li><a href="modules/js-frameworks/js-frameworks.html">js-frameworks</a></li>
+                <li><a href="modules/design/design.html">design</a></li>
+                <li><a href="modules/about-me/about-me.html">about-me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- <div ng-view></div> -->
 
     <!-- main -->
     <div class="container" ng-controller="toolsController">
-        <h1 class="center-align">Development Tools</h1>
+        <h1 class="center-align white-text">Development Tools</h1>
 
-        <div class="row">
-            <div class="col m6 s12" id="basic-tools">
-                <ul class="collection">
-                    <li class="collection-item" ng-repeat="item in basicTools">
-                        {{item.name}} {{item.website}}
-                    </li>
-                </ul>
-            </div>
+        <div class="card-panel">
+            <h4>basic tools</h4>
+            <table class="highlight bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Descriptions</th>
+                        <th>website</th>
+                    </tr>
+                </thead>
 
+                <tbody>
+                    <tr ng-repeat="item in basicTools">
+                        <td>{{item.name}}</td>
+                        <td>{{item.description || 'no description yet...'}}</td>
+                        <td>
+                            <a href="{{item.website}}" class="btn waves-effect blue-grey" target="_blank">{{item.name}}</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-            <div class="col m6 s12">
-                <ul class="collection">
-                    <li class="collection-item" ng-repeat="item in textEditors">
-                        {{item.name}} {{item.website}}
-                    </li>
-                </ul>
-            </div>
+        <div class="card-panel">
+            <h4>text editors</h4>
+            <table class="highlight bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>website</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr ng-repeat="item in textEditors">
+                        <td>{{item.name}}</td>
+                        <td>{{item.description || 'no description yet...'}}</td>
+                        <td>
+                            <a href="{{item.website}}" class="btn waves-effect blue-grey" target="_blank">{{item.name}}</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/Materialize/dist/js/materialize.min.js"></script>
-    <script src="bower_components/angular/angular.min.js"></script>
     <script src="basic-js/basic.js"></script>
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
     <script src="modules/module.js"></script>
 </body>
 
