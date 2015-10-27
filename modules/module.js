@@ -2,12 +2,12 @@
  * @Author: fhc
  * @Date:   2015-10-26 11:47:24
  * @Last Modified by:   fhc
- * @Last Modified time: 2015-10-26 16:07:50
+ * @Last Modified time: 2015-10-27 08:30:04
  */
 
 'use strict';
 
-var ccFedModule = angular.module('ccFedModule', ['ngRoute'])
+var ccFedModule = angular.module('ccFedModule', ['ui.router'])
 
 ccFedModule.controller('toolsController', ['$scope', '$http',
     function($scope, $http) {
@@ -21,19 +21,8 @@ ccFedModule.controller('toolsController', ['$scope', '$http',
     }
 ])
 
-// ccFedModule.config('$routeProvider', ['$routeProvider',
-//     function($routeProvider) {
-//         $routeProvider
-//             .when('modules/tools/:tools', {
-//                 templateUrl: 'modules/tools/tools.html',
-//                 controller: 'toolsController'
-//             })
-//             .when('modules/js-frameworks/:js-frameworks', {
-//                 templateUrl: 'modules/js-frameworks/js-frameworks.html',
-//                 controller: 'jsFrameworksController'
-//             })
-//             .otherwise({
-//                 templateUrl: 'modules/tools/tools.html'
-//             })
+// ccFedModule.config('$stateProvider', ['$stateProvider', '$urlRouterProvider',
+//     function($stateProvider, $urlRouterProvider) {
+
 //     }
 // ])

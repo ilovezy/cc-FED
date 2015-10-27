@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>cc-FED tools</title>
+    <title>cc-FED tools helo</title>
     <link rel="stylesheet" type="text/css" href="bower_components/Materialize/dist/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/<i class=" fa fa-ship "></i>">
 </head>
 
 <body class="blue-grey lighten-1">
@@ -18,23 +19,23 @@
                 <i class="fa fa-bars"></i>
             </a>
             <ul class="right hide-on-med-and-down">
-                <li class="active"><a href="modules/tools/tools.html">tools</a></li>
-                <li><a href="modules/css-frameworks/css-frameworks.html">css-frameworks</a></li>
-                <li><a href="modules/js-frameworks/js-frameworks.html">js-frameworks</a></li>
-                <li><a href="modules/design/design.html">design</a></li>
-                <li><a href="modules/about-me/about-me.html">about-me</a></li>
+                <li class="active"><a href="#/modules/tools/tools.html">tools</a></li>
+                <li><a href="#/modules/css-frameworks/css-frameworks.html">css-frameworks</a></li>
+                <li><a href="#/modules/js-frameworks/js-frameworks.html">js-frameworks</a></li>
+                <li><a href="#/modules/design/design.html">design</a></li>
+                <li><a href="#/modules/about-me/about-me.html">about-me</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
-                <li class="active"><a href="modules/tools/tools.html">tools</a></li>
-                <li><a href="modules/css-frameworks/css-frameworks.html">css-frameworks</a></li>
-                <li><a href="modules/js-frameworks/js-frameworks.html">js-frameworks</a></li>
-                <li><a href="modules/design/design.html">design</a></li>
-                <li><a href="modules/about-me/about-me.html">about-me</a></li>
+                <li class="active"><a href="#/modules/tools/tools.html">tools</a></li>
+                <li><a href="#/modules/css-frameworks/css-frameworks.html">css-frameworks</a></li>
+                <li><a href="#/modules/js-frameworks/js-frameworks.html">js-frameworks</a></li>
+                <li><a href="#/modules/design/design.html">design</a></li>
+                <li><a href="#/modules/about-me/about-me.html">about-me</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- <div ng-view></div> -->
+    <div ui-view></div>
 
     <!-- main -->
     <div class="container" ng-controller="toolsController">
@@ -97,7 +98,7 @@
     <script src="basic-js/basic.js"></script>
 
     <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="modules/module.js"></script>
 </body>
 
